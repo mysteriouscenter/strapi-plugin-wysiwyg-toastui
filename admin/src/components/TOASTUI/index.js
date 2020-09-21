@@ -6,7 +6,7 @@ import 'codemirror/lib/codemirror.css';
 import { Editor } from '@toast-ui/react-editor';
 import { Button } from '@buffetjs/core';
 import 'tui-color-picker/dist/tui-color-picker.css';
-import colorSyntax from '@toast-ui/editor-plugin-color-syntax';
+import { colorSyntax } from '@toast-ui/editor-plugin-color-syntax';
 
 import MediaLib from '../MediaLib';
 
@@ -15,7 +15,7 @@ class TOIEditor extends React.Component {
 
   constructor(props) {
     super(props);
-    this.height = "400px";
+    this.height = "800px";
     this.initialEditType = "markdown";
     this.previewStyle = "vertical";
     this.state = { isOpen : false };
@@ -83,7 +83,9 @@ class TOIEditor extends React.Component {
               },
             });
           }}
-	  plugins={['colorSyntax']}
+	  plugins={[
+	    'colorSyntax',
+	  ]}
           toolbarItems={[
             'heading',
             'bold',
@@ -102,9 +104,10 @@ class TOIEditor extends React.Component {
             'table',
             'link',
             'divider',
+	    'divider',
             'code',
-            'codeblock',
-            'divider',
+	    'codeblock',
+	    'divider',
           ]}
         />
 
