@@ -5,6 +5,8 @@ import '@toast-ui/editor/dist/toastui-editor.css';
 import 'codemirror/lib/codemirror.css';
 import { Editor } from '@toast-ui/react-editor';
 import { Button } from '@buffetjs/core';
+import 'tui-color-picker/dist/tui-color-picker.css';
+import colorSyntax from '@toast-ui/editor-plugin-color-syntax';
 
 import MediaLib from '../MediaLib';
 
@@ -81,6 +83,7 @@ class TOIEditor extends React.Component {
               },
             });
           }}
+	  plugins={['colorSyntax']}
           toolbarItems={[
             'heading',
             'bold',

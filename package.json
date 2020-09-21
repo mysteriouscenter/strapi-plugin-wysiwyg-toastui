@@ -8,7 +8,8 @@
     "description": "Wysiwyg editor using toastui library."
   },
   "dependencies": {
-    "@toast-ui/react-editor": "^2.1.2"
+    "@toast-ui/react-editor": "^2.1.2",
+    "@toast-ui/editor-plugin-color-syntax": "1.0.1"
   },
   "author": {
     "name": "Rakesh Kumar Shardiwal",
